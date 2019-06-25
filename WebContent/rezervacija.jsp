@@ -25,12 +25,10 @@ function findIdCombo() {
 	var id= document.getElementById("predstaveCombo");
 	 var idPredstave=id.options[id.selectedIndex].value;
 	   document.getElementById("id").value +=idPredstave;
-	//   alert("predstava cena"+document.getElementById("id").value);
+
 	   console.log(idPredstave);
-	   //dobili smo broj 500jel to to jeste tarleiba sada da uzmes da setujes u skriveno polje a to si vec uradio
-	   //jel dobra ovo cenaili nije nije ovo je id predstave
-	 //setovsao sam vrednost i id i cenu na serveru uzmi string uradi substring i eto cene jel to ok substring na servletud daparsiraj u int i to je to da isecem id? pa da vazi HVALA!!!!nistaodoh
-}//ajde pokreni
+	
+}
 </script>
 
 </head>
