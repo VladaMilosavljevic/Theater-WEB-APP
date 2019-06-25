@@ -53,17 +53,11 @@ public class ServletRezervacija extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		HttpSession sesija = request.getSession();
-	//	DaoPredstave dp= new DaoImplPredstave();
-	//	List<Predstave>list=dp.vratiPredstave();
-		
-		//for(Predstave p: list) {
+	
 		
 		 String idPredstave=request.getParameter("predstave");
 		 
-	
-		
-	//	 int cena= p.getCena();
-	    String datum = request.getParameter("datum");
+	       String datum = request.getParameter("datum");
 		String brojKarata=request.getParameter("kolicina");
 	 
 		Rezervacija r=new Rezervacija();
@@ -88,16 +82,10 @@ public class ServletRezervacija extends HttpServlet {
     	}else {
 			response.sendRedirect("prijava.jsp");
         
-    /*    ArrayList<Rezervacija>lista=(ArrayList<Rezervacija>) sesija.getAttribute("lista");
-        if(lista== null) {
-        	lista= new ArrayList<Rezervacija>();*/
+    
     	}
 		}
-		/*
-		 * lista.add(r); sesija.setAttribute("lista", lista); ServiceRezervacija sr=new
-		 * ServiceRezervacijaImpl(); sr.insertRezervacija(lista);
-		 * response.sendRedirect("rezervacija.jsp");
-		 */		
+				
         
 
 }
